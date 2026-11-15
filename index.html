@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ee">
+  <meta name="description" content="youlinh 的 GitHub Pages 作品导航，集中浏览网页游戏、工具和实验页面。">
+  <title>作品导航 · youlinh</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="browse.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#catalog">跳到站点目录</a>
+  <header class="topbar wrapper">
+    <a class="brand" href="./" aria-label="youlinh 作品导航首页">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span>youlinh</span>
+    </a>
+    <nav aria-label="主导航">
+      <a class="nav-directory" href="#catalog">站点目录</a>
+      <a class="github-link" href="https://github.com/youlinh" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main class="wrapper">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="hero-label"><span aria-hidden="true"></span> GITHUB PAGES</p>
+        <h1 id="page-title">作品导航</h1>
+        <p class="hero-intro">从浏览器游戏到实用工具，<br>我发布的网页作品都在这里。</p>
+        <a class="hero-button" href="#catalog">浏览全部站点 <span aria-hidden="true">↓</span></a>
+      </div>
+      <a class="hero-feature" href="https://youlinh.github.io/exfil-frontline/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/frontline-hero.webp" alt="" fetchpriority="high" width="830" height="480">
+        <span class="feature-caption">
+          <span><strong>撤离前线</strong><small>EXFIL FRONTLINE</small></span>
+          <span class="feature-arrow" aria-hidden="true">↗</span>
+        </span>
+      </a>
+    </section>
+
+    <section class="catalog" id="catalog" aria-labelledby="catalog-title">
+      <div class="catalog-head">
+        <div>
+          <h2 id="catalog-title">站点目录</h2>
+          <p class="result-count" id="result-count" role="status" aria-live="polite">共 8 个站点</p>
+        </div>
+        <div class="search" id="search" hidden>
+          <label class="sr-only" for="site-search">搜索站点</label>
+          <span class="search-icon" aria-hidden="true"></span>
+          <input id="site-search" type="search" placeholder="搜索站点…" autocomplete="off">
+        </div>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="站点分类" hidden>
+        <button type="button" data-filter="all" aria-pressed="true">全部</button>
+        <button type="button" data-filter="action" aria-pressed="false">动作与策略</button>
+        <button type="button" data-filter="puzzle" aria-pressed="false">益智闯关</button>
+        <button type="button" data-filter="tool" aria-pressed="false">工具与实验</button>
+      </div>
+
+      <ul class="site-grid" id="sites">
+        <li data-category="action" data-keywords="exfil-frontline">
+          <a class="site-card" href="https://youlinh.github.io/exfil-frontline/" target="_blank" rel="noopener noreferrer" aria-labelledby="exfil-title">
+            <div class="card-cover cover-exfil"><img src="assets/exfil-frontline.webp" alt="" width="768" height="432"></div>
+            <div class="card-copy">
+              <span class="category">3D 射击</span>
+              <h3 id="exfil-title">撤离前线</h3>
+              <p>进入战区搜索物资，交火后寻找撤离点。</p>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </li>
+        <li data-category="action" data-keywords="core-frontier">
+          <a class="site-card" href="https://youlinh.github.io/core-frontier/" target="_blank" rel="noopener noreferrer" aria-labelledby="core-title">
+            <div class="card-cover cover-core"><img src="assets/core-frontier.webp" alt="" width="768" height="432"></div>
+            <div class="card-copy">
+              <span class="category">3D 射击</span>
+              <h3 id="core-title">核心防线 · 合成战场</h3>
+              <p>合成武器，抵御敌人，守住三道核心防线。</p>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </li>
+        <li data-category="action" data-keywords="statue-guardians-3d">
+          <a class="site-card" href="https://youlinh.github.io/statue-guardians-3d/" target="_blank" rel="noopener noreferrer" aria-labelledby="statue-title">
+            <div class="card-cover cover-statue"><img src="assets/statue-guardians-3d.webp" alt="" width="768" height="432"></div>
+            <div class="card-copy">
+              <span class="category">3D 策略</span>
+              <h3 id="statue-title">雕像守卫 · 元素军团 3D</h3>
+              <p>采矿、招募和升级，指挥火柴人军团远征。</p>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </li>
+        <li data-category="puzzle" data-keywords="digit-adventure">
+          <a class="site-card" href="https://youlinh.github.io/digit-adventure/" target="_blank" rel="noopener noreferrer" aria-labelledby="digit-title">
+            <div class="card-cover cover-digit"><img src="assets/digit-adventure.webp" alt="" loading="lazy" width="768" height="432"></div>
+            <div class="card-copy">
+              <span class="category">算术闯关</span>
+              <h3 id="digit-title">数字奇遇</h3>
+              <p>跟着历史人物走棋，收集数字牌，用算式打开宝箱。</p>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </li>
+        <li data-category="puzzle" data-keywords="qinglong-puzzle">
+          <a class="site-card" href="https://youlinh.github.io/qinglong-puzzle/" target="_blank" rel="noopener noreferrer" aria-labelledby="qinglong-title">
+            <div class="card-cover cover-qinglong"><img src="assets/qinglong-puzzle.webp" alt="" loading="lazy" width="768" height="432"></div>
+            <div class="card-copy">
+              <span class="category">数字策略</span>
+              <h3 id="qinglong-title">青龙闯关</h3>
+              <p>抽闸、比较战力、利用道具倍增，解开六道关卡。</p>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </li>
+        <li data-category="action" data-keywords="oh-attack">
+          <a class="site-card" href="https://youlinh.github.io/oh-attack/" target="_blank" rel="noopener noreferrer" aria-labelledby="oh-title">
+            <div class="card-cover cover-oh"><img src="assets/oh-attack.webp" alt="" loading="lazy" width="768" height="432"></div>
+            <div class="card-copy">
+              <span class="category">网页游戏</span>
+              <h3 id="oh-title">Oh！进攻吧</h3>
+              <p>招募不同兵种，指挥部队出击或撤回基地。</p>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </li>
+        <li data-category="tool" data-keywords="srcb">
+          <a class="site-card" href="https://youlinh.github.io/srcb/" target="_blank" rel="noopener noreferrer" aria-labelledby="srcb-title">
+            <div class="card-cover text-cover calendar-cover" aria-hidden="true">
+              <div class="calendar-art"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="card-copy">
+              <span class="category">管理工具</span>
+              <h3 id="srcb-title">智能调休管理系统</h3>
+              <p>调休管理的网页入口。</p>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </li>
+        <li data-category="tool" data-keywords="test">
+          <a class="site-card" href="https://youlinh.github.io/Test/" target="_blank" rel="noopener noreferrer" aria-labelledby="test-title">
+            <div class="card-cover text-cover test-cover" aria-hidden="true"><span>&lt;/&gt;</span></div>
+            <div class="card-copy">
+              <span class="category">实验页面</span>
+              <h3 id="test-title">Test</h3>
+              <p>GitHub Pages 测试站点。</p>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="empty" id="empty" hidden>
+        <p>未找到匹配的站点。</p>
+        <button type="button" id="clear-filters">清除筛选</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrapper">
+    <span>youlinh <span class="footer-divider">/</span> GitHub Pages</span>
+    <a href="#page-title">返回顶部 <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>
